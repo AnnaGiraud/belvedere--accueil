@@ -339,19 +339,14 @@ position: relative;
 .faq__category{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-}
-
-.faq__category{
-    display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 350px;
+    margin-bottom: 15px;
 }
 
 /* Keydata */
 
 .keydata{
-    text-align: right;
     margin-top: 150px;
 }
 
@@ -428,8 +423,17 @@ position: relative;
 .text-justify{
     text-align: center;
 }
+
+.text-right{
+    text-align: right;
+}
+
 .opacity-50{
     opacity: .5;
+}
+
+.icon__width__normal{
+    width: 50px;
 }
 
 /* Personnalisation des icônes font-awesome */
