@@ -8,6 +8,7 @@
     --heading-color: #5956E9;
     --heading-color2: #27282E;
     --heading-color3: #FBB8C4;
+    --heading-color4: #b6b6b6;
 
     --heading-background-color: #ECF2F6;
     --heading-background-color-2: #27282E;
@@ -81,8 +82,10 @@ header{
     width: 80vw;
     padding: 10px;
     border-radius: 20px;
-    margin: 40px auto;
+    margin: 40px 10vw;
 
+    position: fixed;
+    z-index: 10;
 
     color: #4C4848;
     background-color: white;
@@ -90,10 +93,15 @@ header{
   
 }
 
+footer{
+    margin-top: 100px;
+    padding: 50px 0px;
+}
+
 h1{
     font-size: 80px;
     line-height: 1.2;
-    margin: 0px;
+    margin: 30px 0px;
 }
 
 h2{
@@ -149,6 +157,11 @@ hr{
     grid-gap: 50px;
 }
 
+.flex__space__between{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* -----------------Components---------------- */
 
 /* Bouton */
@@ -181,6 +194,7 @@ hr{
 .menu{
     display: flex;
     justify-content: center; 
+    
 
 }
 
@@ -189,6 +203,9 @@ hr{
     margin: auto;
 }
 
+.menu_round_icon{
+    margin-left: 0.5rem;
+}
 /* Sous-menu */
 
 .menu__item .menu{
@@ -216,19 +233,25 @@ hr{
 
 .hero{
 display: flex;
-justify-content: space-between;
- height: 100vh;
- width: 80vw;
- z-index: 1;
+ height: 125vh;
+ margin-bottom: -10em;
+
+position: relative;
+
+ background-image: url(img/Bannière.png);
+ background-repeat: no-repeat;
+ background-position: 55vw 00px;
+ background-size: contain;
 }
 
 .hero__img{
-    max-width: 140vh;
-    z-index: -1;
-    position: absolute;
+    max-width: 100vh;
 
-    top: -50px;
-    right:-350px;
+    position: absolute;
+   
+
+    top: -170px;
+    
 
 }
 
@@ -236,8 +259,15 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 0px;
+    
+    width: 80vw;
+    margin: auto;
 }
+
+.hero__round__icon{
+    margin-right: 0.5rem;
+}
+
 
 .hero__scroll{
     margin-top: 6rem;
@@ -249,10 +279,15 @@ justify-content: space-between;
     color: white;
     z-index: -1;
     padding: 5rem 0px ;
+  
 }
 
 .service__title{
     margin-bottom: 150px;
+}
+
+.service__content{
+    margin-bottom: 2rem;
 }
 
 /* Newsletter */
@@ -331,10 +366,25 @@ justify-content: space-between;
     margin-top: 2rem;
 }
 
+/* footer */
+
+.footer__img{
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.footer_social{
+    color: var(--heading-color4);
+}
+
 /* -----------------Utilities----------------- */
 
 .has-grey-text{
     color: #949497;
+}
+
+.has-grey-light-text{
+    color: var(--heading-color4);
 }
 
 .has-purple-text{
@@ -357,6 +407,12 @@ justify-content: space-between;
     background-color: var(--heading-color3);
     width: 100%;
     margin-bottom: 3rem;
+}
+
+.hr__style__footer{
+    background-color: #e4e4e4;
+    width: 100%;
+    margin: 3rem 0px;
 }
 
 .text-large{
