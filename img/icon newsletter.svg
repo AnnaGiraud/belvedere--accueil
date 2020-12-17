@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.623" height="9.664" viewBox="0 0 16.623 9.664">
+  <g id="icon_newsletter" data-name="icon newsletter" transform="translate(-801 -2888)">
+    <path id="mail" d="M13.012,5.625H3.788A1.539,1.539,0,0,0,2.25,7.163v6.589a1.539,1.539,0,0,0,1.538,1.538h9.224a1.539,1.539,0,0,0,1.538-1.538V7.163A1.539,1.539,0,0,0,13.012,5.625Zm-.389,2.543L8.669,11.243a.439.439,0,0,1-.539,0L4.177,8.168a.439.439,0,1,1,.539-.693L8.4,10.34l3.684-2.865a.439.439,0,1,1,.539.693Z" transform="translate(803.073 2882.375)"/>
+    <g id="Groupe_75" data-name="Groupe 75" transform="translate(801 2888.773)">
+      <rect id="Rectangle_92" data-name="Rectangle 92" width="2.319" height="1.16" rx="0.58" transform="translate(0.773 0)" fill="#9ba2b0"/>
+      <rect id="Rectangle_93" data-name="Rectangle 93" width="3.092" height="1.16" rx="0.58" transform="translate(0 3.866)" fill="#9ba2b0"/>
+      <rect id="Rectangle_94" data-name="Rectangle 94" width="2.319" height="1.16" rx="0.58" transform="translate(0.773 7.731)" fill="#9ba2b0"/>
+    </g>
+  </g>
+</svg>

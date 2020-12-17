@@ -11,13 +11,13 @@
     </head>
     <body>
         <header>
-            <div class="menu_logo">
+            <div class="menu__logo">
                 <i class="fas fa-circle"></i>
                 <span>BELVEDERE</span>
             </div>
             <nav>
                 <ul class="menu">
-                    <li class="menu__item menu_chirurgie">
+                    <li class="menu__item menu__chirurgie">
                         <a href="#" >Chirurgie</a>
                         <i class="fas fa-caret-down"></i>
                         <ul class="menu">
@@ -47,7 +47,7 @@
                             </li>
                         </ul>
                     </li >
-                    <li class="menu_maternite menu__item" >
+                    <li class="menu__maternite menu__item" >
                         <a href="#" >Maternité</a>
                         <i class="fas fa-caret-down"></i>
                         <ul class="menu">
@@ -97,7 +97,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu_gynecologie menu__item">
+                    <li class="menu__gynecologie menu__item">
                         <a href="#" >Gynécologie</a>
                         <i class="fas fa-caret-down"></i>
                         <ul class="menu">
@@ -131,7 +131,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="menu_button_co button">
+            <a href="#" class="menu__button__co button">
                 Connexion
                 <i class="far fa-circle margin-left"></i>
             </a>
@@ -146,6 +146,10 @@
                     <div class="hero__scroll">
                         <img src="img/icon scroll.svg" alt="" class="margin-right">
                         <p>Scroll pour continuer à explorer</p>
+                    </div>
+
+                    <div class="hero__banniere">
+                        <img src="img/bannière_mobile.png" alt="">
                     </div>
                 </div>
 
@@ -182,14 +186,17 @@
 
             <section class="newsletter">
                 <div class="newsletter__img__outline">
-                    <img src="img/shutterstock_517614787.png" class="newsletter_img" alt="Photo de maternité"> 
+                    <img src="img/shutterstock_517614787.png" class="newsletter__img" alt="Photo de maternité"> 
                 </div>
 
                 <h2>Lorem ipsum dolor<br> sit amet, consetetur</h2>
 
-                <form class="newsletter_form">
-                   
-                    <input type="email" name="email" placeholder="Email adress" required>
+                <form class="newsletter__form grid grid__column__2">
+                    <div class="newsletter__placeholder__icon">
+                       
+                        <img src="img/icon newsletter.svg" alt="">
+                        <input type="email" name="email" placeholder="Email adress" required>
+                    </div>
                     <input type="submit" value="Envoyer" class="button">
                 </form>
                 
@@ -221,15 +228,17 @@
                 </div>
             </section>
             
-            <section class="keydata grid grid__column__2 container text-right">
-                <div>
-                    <img src="img/Groupe 237.png" alt="Image de chiffre clé" class="img__style__1">
-                </div>
-                <div>
-                    <p class="has-purple-text">Lorem ipsum</p>
-                    <h1>Lorem ipsum dolor <span class="has-purple-text">.</span></h1>
-                    <p class="has-grey-text">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy eirmod</p>
-                    <p class="text-large">10x</p>
+            <section class="keydata text-right">
+                <div class="container grid grid__column__2 ">
+                    <div>
+                        <img src="img/Groupe 237.png" alt="Image de chiffre clé" class="img__style__1">
+                    </div>
+                    <div>
+                        <p class="has-purple-text">Lorem ipsum</p>
+                        <h1>Lorem ipsum dolor <span class="has-purple-text">.</span></h1>
+                        <p class="has-grey-text">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy eirmod</p>
+                        <p class="text-large">10x</p>
+                    </div>
                 </div>
             </section>
 
@@ -284,7 +293,7 @@
                 </div>
             </section>
         </main>
-        <footer class="grid">
+        <footer class="grid container">
             <img src="img/Groupe 238.png" alt="logo du belvédère" class="footer__img">
             <p class="has-grey-text text-justify">Centre hospitalier du Belvédère - Femme, mère, enfant - Maternité, chirurgie, gynécologie<br>agglomération de Rouen (76)</p>
             
@@ -294,9 +303,9 @@
                     <span class="has-grey-light-text">@2020, BELVEDERE</span>
                     <div>
                         <span class="has-purple-text">Follow us</span>
-                        <i class="fab fa-facebook-square footer_social"></i>
-                        <i class="fab fa-youtube footer_social"></i>
-                        <i class="fab fa-instagram-square footer_social"></i>
+                        <i class="fab fa-facebook-square footer__social"></i>
+                        <i class="fab fa-youtube footer__social"></i>
+                        <i class="fab fa-instagram-square footer__social"></i>
                     </div>
                 </div>
             </div>

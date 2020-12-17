@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920.355" height="876.852" viewBox="0 0 1920.355 876.852">
+  <g id="background-section-service" transform="translate(-0.145 -1087)">
+    <g id="Ellipse_159" data-name="Ellipse 159" transform="translate(321 1087)" fill="none" stroke="#3f4047" stroke-width="1">
+      <circle cx="280" cy="280" r="280" stroke="none"/>
+      <circle cx="280" cy="280" r="279.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_160" data-name="Ellipse 160" cx="151" cy="151" r="151" transform="translate(1162 1216)" fill="#525360"/>
+    <circle id="Ellipse_161" data-name="Ellipse 161" cx="29.5" cy="29.5" r="29.5" transform="translate(465 1157)" fill="#303138"/>
+    <circle id="Ellipse_162" data-name="Ellipse 162" cx="53.5" cy="53.5" r="53.5" transform="translate(202 1647)" fill="#3d3e47"/>
+    <line id="Ligne_6" data-name="Ligne 6" x1="590" y2="596" transform="translate(0.5 1367.5)" fill="none" stroke="#404148" stroke-width="1"/>
+    <line id="Ligne_7" data-name="Ligne 7" x2="819" transform="translate(1101.5 1642.5)" fill="none" stroke="#514fd7" stroke-width="1"/>
+  </g>
+</svg>
