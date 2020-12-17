@@ -203,9 +203,6 @@ hr{
     margin: auto;
 }
 
-.menu_round_icon{
-    margin-left: 0.5rem;
-}
 /* Sous-menu */
 
 .menu__item .menu{
@@ -264,13 +261,11 @@ position: relative;
     margin: auto;
 }
 
-.hero__round__icon{
-    margin-right: 0.5rem;
-}
-
 
 .hero__scroll{
     margin-top: 6rem;
+
+    display: flex;
 }
 /* Service */
 
@@ -370,6 +365,8 @@ position: relative;
 
 .footer_social{
     color: var(--heading-color4);
+    font-size: 20px;
+    margin-left: 2rem;
 }
 
 /* -----------------Utilities----------------- */
@@ -436,6 +433,13 @@ position: relative;
     width: 50px;
 }
 
+.margin-right{
+    margin-right: .5rem;
+}
+
+.margin-left{
+    margin-left: .5rem;
+}
 /* Personnalisation des icônes font-awesome */
 
 .fas{
