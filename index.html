@@ -11,6 +11,14 @@
     </head>
     <body>
         <header>
+            <div class="menu__mobile container">
+                <img src="img/Menu mobile.svg" alt="Menu">
+                <div class="menu__logo__mobile">
+                    <i class="fas fa-circle"></i>
+                    <span>BELVEDERE</span>
+                </div>
+                <img src="img/icon search.svg" alt="Rechercher des informations">
+            </div>
             <div class="menu__logo">
                 <i class="fas fa-circle"></i>
                 <span>BELVEDERE</span>
@@ -139,18 +147,19 @@
         <main>
             <section class="hero">
                 <div class="hero__content">
-                    <span>Bienvenue</span>
-                    <h1>Centre hospitalier <br>du Belvédère <span class="has-purple-text">_</span></h1>
-                    <a href="#" class="button" aria-label="En savoir plus sur le Belvédère"><i class="far fa-circle margin-right"></i>En savoir plus</a>
+                    <div class="container hero__title">
+                        <span>Bienvenue</span>
+                        <h1>Centre hospitalier <br>du Belvédère <span class="has-purple-text">_</span></h1>
+                        <a href="#" class="button" aria-label="En savoir plus sur le Belvédère"><i class="far fa-circle margin-right"></i>En savoir plus</a>
 
-                    <div class="hero__scroll">
-                        <img src="img/icon scroll.svg" alt="" class="margin-right">
-                        <p>Scroll pour continuer à explorer</p>
+                        <div class="hero__scroll">
+                            <img src="img/icon scroll.svg" alt="" class="margin-right">
+                            <p>Scroll pour continuer à explorer</p>
+                        </div>
                     </div>
-
-                    <div class="hero__banniere">
-                        <img src="img/bannière_mobile.png" alt="">
-                    </div>
+                   
+                    <img src="img/bannière_mobile.png" alt="" class="hero__banniere">
+                    
                 </div>
 
             </section>
@@ -160,20 +169,24 @@
                     <p class="has-grey-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                 </div>
                 
+                <div class="service__controller">
+                    <img src="img/icon-arrow-left.svg" alt="Flèche gauche de navigation des services du Belvédère">
+                    <img src="img/icon-arrow-right.svg" alt="Flèche droit de navigation des services du Belvédère">
+                </div>
                 <div class="grid grid__column__3 container">
-                    <div>
+                    <div class="service__category service__active">
                         <img src="img/icon_chirurgie.png" alt="Photographie chirurgie">
                         <h2>Chirurgie</h2>
                         <p class="has-grey-text service__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                         <a href="#" class="button__style__2" aria-label="En savoir plus sur la chirurgie">En savoir plus</a>
                     </div>
-                    <div>
+                    <div class="service__category">
                         <img src="img/icon_maternite.png" alt="Photographie maternité">
                         <h2>Maternité</h2>
                         <p class="has-grey-text service__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
                         <a href="#" class="button__style__2" aria-label="En savoir plus sur la maternité">En savoir plus</a>
                     </div>
-                    <div>
+                    <div class="service__category">
                         <img src="img/icon_gynecologie.png" alt="Photographie gynécologie">
                         <h2>Gynécologie</h2>
                         <p class="has-grey-text service__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
@@ -223,17 +236,17 @@
                         <i class="fas fa-plus fa-style-2"></i>
                     </div>
                 </div>
-                <div>
-                    <img src="img/shutterstock_1130966555.png" alt="Photo d'échographie" class="img__style__1">
-                </div>
+                
+                <img src="img/shutterstock_1130966555.png" alt="Photo d'échographie" class="img__style__1">
+                
             </section>
             
             <section class="keydata text-right">
                 <div class="container grid grid__column__2 ">
-                    <div>
-                        <img src="img/Groupe 237.png" alt="Image de chiffre clé" class="img__style__1">
-                    </div>
-                    <div>
+                    
+                    <img src="img/Groupe 237.png" alt="Image de chiffre clé" class="img__style__1">
+                    
+                    <div class="keydata__content">
                         <p class="has-purple-text">Lorem ipsum</p>
                         <h1>Lorem ipsum dolor <span class="has-purple-text">.</span></h1>
                         <p class="has-grey-text">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy eirmod</p>
@@ -255,7 +268,7 @@
                             
                         </div>
                     </div>
-                    <div class="temoignage__content">
+                    <div class="temoignage__content temoignage__active">
                         <hr class="hr__style__3">
                         <q> Lorem ipsum dolor site amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo </q>
                         <div class="grid grid__column__2 temoignage__user">
