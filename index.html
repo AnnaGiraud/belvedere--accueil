@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <div class="menu__mobile container">
+            <div class="menu__mobile container" role="navigation" aria-label="Menu principal mobile">
                 <img src="img/Menu mobile.svg" alt="Menu">
                 <div class="menu__logo__mobile">
                     <i class="fas fa-circle"></i>
@@ -24,7 +24,7 @@
                 <span>BELVEDERE</span>
             </div>
             <nav>
-                <ul class="menu">
+                <ul class="menu" role="navigation" aria-label="Menu principal">
                     <li class="menu__item menu__chirurgie">
                         <a href="#" >Chirurgie</a>
                         <i class="fas fa-caret-down"></i>
@@ -144,7 +144,7 @@
                 <i class="far fa-circle margin-left"></i>
             </a>
         </header>
-        <main>
+        <main role="main">
             <section class="hero">
                 <div class="hero__content">
                     <div class="container hero__title">
@@ -208,7 +208,7 @@
                     <div class="newsletter__placeholder__icon">
                        
                         <img src="img/icon newsletter.svg" alt="">
-                        <input type="email" name="email" placeholder="Email adress" required>
+                        <input type="email" name="email" placeholder="Adresse email" required>
                     </div>
                     <input type="submit" value="Envoyer" class="button">
                 </form>
@@ -337,7 +337,7 @@
             <div class="footer__content container text-small">
                 
                 <div class="flex__space__between">
-                    <span class="has-grey-light-text">@2020, BELVEDERE</span>
+                    <span class="has-grey-light-text">@2021, BELVEDERE</span>
                     <div>
                         <span class="has-purple-text">Follow us</span>
                         <i class="fab fa-facebook-square footer__social"></i>
@@ -356,11 +356,11 @@
             acc[i].addEventListener("click", function() {
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                panel.style.display = "none";
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
                 } else {
-                panel.style.display = "block";
-                }
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
             });
             }
         </script>

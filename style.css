@@ -1,5 +1,6 @@
 /* ----------Architecture : ITCSS------------- */
 /* ----------Convention : BEM----------------- */
+
 /* -----------------Settings------------------ */
 
 :root{
@@ -124,7 +125,7 @@ h3{
     }
     
     h1{
-        font-size: 80px;
+        font-size: 4.5rem;
     }
     
     h2{
@@ -134,7 +135,6 @@ h3{
     h3{
         font-size: 20px;
     }
-    
 }
 
 /* -----------------Objects------------------- */
@@ -175,11 +175,15 @@ h3{
 }
 
 .panel {
-    display: none;
+    
     overflow: hidden;
-    border-bottom: 4px solid var(--heading-color);
+    
     margin-bottom: 2rem;
     
+
+    max-height: 0;
+ 
+    transition: max-height 0.5s ease-out;
   }
 
 @media (min-width: 968px){
@@ -208,8 +212,7 @@ h3{
 
     .flex__space__between{
         flex-direction: row; 
-    }
-    
+    }  
 }
 
 /* -----------------Components---------------- */
@@ -254,8 +257,6 @@ h3{
 .menu__logo{
     display: none;
 }
-
-
 
 @media (min-width: 968px){
     .menu{
@@ -308,8 +309,6 @@ h3{
 
 /* Hero section */
 
-
-
 .hero__banniere{
     margin-top: 0px;
     margin-bottom: -10px;
@@ -337,7 +336,7 @@ h3{
     .hero{
         display: flex;
         position: relative;
-        height: 125vh;
+        height: 120vh;
         margin-bottom: -6em;
    
         background-image: url(img/Bannière.png);
@@ -365,11 +364,10 @@ h3{
     }
 
     .hero__title{
-		width: 50vw;
+		width: 45vw;
 		margin: 0px;
 	}
 }
-
 
 /* Service */
 
@@ -424,7 +422,6 @@ h3{
         display: none;
     }
 
-    
     .service__category{
         display: block;
 }
@@ -504,7 +501,7 @@ h3{
 @media (min-width: 968px){
     .newsletter__form{
         grid-gap: 30px;
-        width: 20vw;
+        width: 25vw;
         padding: 10px;
         background-color: white;
         box-shadow: 0px 3px 99px var(--heading-box-shadow);
@@ -519,11 +516,11 @@ h3{
         margin-bottom: 0px;
     }
 }
+
 /* FAQ */
 
 .faq{
     padding : 5rem 0px;
-    
 }
 
 .faq__category{
@@ -546,8 +543,8 @@ h3{
 @media (min-width: 968px){
 .faq__category{
     width: 350px;
-    
-}}
+}
+}
 
 /* Keydata */
 
@@ -566,7 +563,6 @@ h3{
 
 @media (min-width: 968px){
     .keydata{
-        margin-top: 150px;
         background-size: 95vw;
         background-position: 20px 0px;
     }
@@ -727,5 +723,4 @@ h3{
     .img__style__1{
         max-width: 600px;
     }
-   
 }
