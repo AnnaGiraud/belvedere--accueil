@@ -23,9 +23,7 @@
 body{
     margin: 0px;
     padding: 0px;
-}
 
-body{
     font-family: var(--heading-font-family);
     font-size: var(--heading-font-size);
 }
@@ -80,6 +78,7 @@ img{
 img + img{
     margin-left: 1rem;
 }
+
 /* -----------------Elements------------------ */
 
 header{
@@ -106,14 +105,6 @@ h2{
 
 h3{
     font-size: 16px;
-}
-
-hr{
-    width: 22px;
-    height: 4px;
-    background-color: var(--heading-color);
-    margin: 6px 0px 0px 0px;
-    border: 0px;
 }
 
 @media (min-width: 968px){
@@ -182,6 +173,14 @@ hr{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.panel {
+    display: none;
+    overflow: hidden;
+    border-bottom: 4px solid var(--heading-color);
+    margin-bottom: 2rem;
+    
+  }
 
 @media (min-width: 968px){
     .container {
@@ -256,6 +255,8 @@ hr{
     display: none;
 }
 
+
+
 @media (min-width: 968px){
     .menu{
         display: flex;
@@ -286,6 +287,15 @@ hr{
     box-shadow: 0px 3px 99px #5766F929;
     background-color: white;
     transition: .5s;
+}
+
+.menu__item .menu a::after{
+    content:"";
+    display: block;
+    width: 22px;
+    height: 4px;
+    margin: 6px 0px 0px 0px;
+    background-color: var(--heading-color);
 }
 
 /* Apparition du sous-menu */
@@ -353,6 +363,11 @@ hr{
     .hero__scroll{
         display: flex;
     }
+
+    .hero__title{
+		width: 50vw;
+		margin: 0px;
+	}
 }
 
 
@@ -517,15 +532,22 @@ hr{
     justify-content: space-between;
     width: 100%;
     margin: 15px 0px;
+    cursor: pointer;
 }
 
+.faq__category i{
+    transition: .5s;
+}
+
+.faq__category:hover i{
+    transform: rotate(45deg);
+}
 
 @media (min-width: 968px){
 .faq__category{
     width: 350px;
     
-}
-}
+}}
 
 /* Keydata */
 
@@ -559,6 +581,7 @@ hr{
 .temoignage__content{
     display: none;
     left: 50px;
+    
 }
 
 .temoignage__user{
@@ -569,6 +592,19 @@ hr{
 .temoignage__active{
     display: block
 }
+
+.temoignage__content {
+    --testimonial-color: var(--heading-color);
+    border-top: 4px solid var(--testimonial-color);
+    padding-top: 2rem;
+  }
+  .temoignage__content:nth-child(odd) {
+    --testimonial-color: var(--heading-color3);
+  }
+
+  .temoignage__content:nth-child(4) {
+    opacity: .5;
+  }
 
 @media (min-width: 968px){
     .temoignage__content{
@@ -589,6 +625,14 @@ hr{
     font-size: 30px;
     margin-left: 2rem;
     margin-top: 2rem;
+}
+
+.footer__content::before{
+    content:"";
+    display: block;
+    height: 4px;
+    background-color: #e4e4e4;
+    margin: 2rem 0px;
 }
 
 @media (min-width: 968px){
@@ -650,32 +694,6 @@ hr{
     }
 }
 
-/* style de hr*/
-
-.hr__style__2{
-    position: absolute;
-    right: 0px;
-    width: 500px;
-    height: 4px;
-}
-
-.hr__style__3{
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
-.hr__style__4{
-    background-color: var(--heading-color3);
-    width: 100%;
-    margin-bottom: 3rem;
-}
-
-.hr__style__footer{
-    background-color: #e4e4e4;
-    width: 100%;
-    margin: 3rem 0px;
-}
-
 /* Personnalisation des icônes */
 
 .fas{
@@ -691,10 +709,6 @@ hr{
 }
 
 /* autre*/
-
-.opacity-50{
-    opacity: .5;
-}
 
 .margin-right{
     margin-right: .5rem;
