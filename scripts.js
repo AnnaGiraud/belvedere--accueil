@@ -1,16 +1,21 @@
 
 // Accordéon
 var acc = document.querySelectorAll(".accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
+for (var i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function(event) {
 
     var accTitle = this.querySelector(".accordion--title")
     var accContent = this.querySelector(".accordion--content")
 
     accTitle.classList.toggle("is-active");
     accContent.classList.toggle("is-open");
+
+    if (accContent.style.maxHeight) {
+        accContent.style.maxHeight = null;
+    } else {
+        accContent.style.maxHeight = accContent.scrollHeight + "px";
+    } 
 
 });
 }
