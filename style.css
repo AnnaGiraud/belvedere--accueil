@@ -82,8 +82,6 @@ img + img{
 
 /* -----------------Elements------------------ */
 
-
-
 footer{
     padding: 150px 0px 50px 0px;
 }
@@ -243,6 +241,7 @@ h3{
     background-color: white;
     color: var(--heading-color);
 }
+
 .button__style__2{
     background-color: var(--heading-background-color);
     color: var(--heading-color2);
@@ -602,8 +601,7 @@ h3{
 
 .temoignage__content{
     display: none;
-    left: 50px;
-    
+    left: 50px; 
 }
 
 .temoignage__user{
@@ -683,6 +681,7 @@ h3{
 .has-grey-blue{
     color: #9CA1B0;
 }
+
 .has-purple-text{
     color: var(--heading-color);
     font-weight: 600;
@@ -705,6 +704,7 @@ h3{
 .text-right{
     text-align: left;
 }
+
 @media (min-width: 968px){
     .text-large{
         font-size: 300px;
@@ -753,6 +753,4 @@ h3{
     .img__style__1{
         max-width: 600px;
     }
-
-    
 }
